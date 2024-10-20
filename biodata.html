@@ -5,70 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <style>
+        /* Define a color scheme for the suit (background and text colors) */
+        body {
+            background-color: #f0f8ff; /* Light suit-like background */
+            font-family: Arial, sans-serif;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #ffffff; /* White background for table */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for suit effect */
         }
-        table, th, td {
+        th, td {
             border: 1px solid black;
             padding: 10px;
+            font-size: 14px;
         }
         th {
             text-align: left;
+            background-color: #004d80; /* Dark blue for suit jacket theme */
+            color: #ffffff; /* White text for contrast */
+        }
+        td {
+            background-color: #f0f8ff; /* Light blue for shirt-like color */
+            color: #333; /* Dark text for readability */
         }
         img {
             width: 150px;
             height: 150px;
             object-fit: cover;
+            border-radius: 50%; /* Rounded corners for the image */
+        }
+        h1 {
+            text-align: center;
+            color: #004d80; /* Dark blue to match suit */
         }
     </style>
 </head>
 <body>
     <h1>Personal Biodata</h1>
     <table>
+        <!-- Row for Name, Value, and Image all in the same row -->
         <tr>
             <th>Name</th>
-            <td>Nor Farah Sabrina Binti Rosli</td>
-            <th rowspan="5"> <!-- Cell for image spanning multiple rows -->
+            <td align="center">Nor Farah Sabrina Binti Rosli</td>
+            <td align="center"> <!-- Image stays in the same row as Name -->
                 <img src="me.png" alt="Profile Photo">
-            </th>
+            </td>
         </tr>
+        <!-- Subsequent rows for the details in three columns -->
         <tr>
             <th>Date of Birth</th>
-            <td>26 June 2001</td>
+            <td align="center" colspan="2">26 June 2001</td>
         </tr>
         <tr>
             <th>Religion</th>
-            <td>Islam</td>
+            <td align="center" colspan="2">Islam</td>
         </tr>
         <tr>
             <th>Race</th>
-            <td>Malay</td>
+            <td align="center" colspan="2">Malay</td>
+        </tr>
+        <!-- For Address with three columns -->
+        <tr>
+            <th rowspan="4">Address</th> <!-- Address label spans 4 rows -->
+            <td>Street:</td>
+            <td align="center">No 65 Laluan Klebang Jaya 42</td>
         </tr>
         <tr>
-            <th>Address</th>
-            <td>
-                No 65 Laluan Klebang Jaya 42<br>
-                Taman Klebang Jaya<br>
-                31200 Chemor<br>
-                Perak Darul Ridzuan
-            </td>
+            <td>Town:</td>
+            <td align="center">Taman Klebang Jaya</td>
         </tr>
         <tr>
-            <th>Contact</th>
-            <td>
-                Mobile: +60195498053<br>
-                Social Media: @frhsbrn_<br>
-                Website: <a href="https://www.instagram.com/frhsbrn_/">frhsbrn_</a>
-            </td>
+            <td>District:</td>
+            <td align="center">31200 Chemor</td>
         </tr>
+        <tr>
+            <td>State:</td>
+            <td align="center">Perak Darul Ridzuan</td>
+        </tr>
+        <!-- For Contact with three columns -->
+        <tr>
+            <th rowspan="3">Contact</th> <!-- Contact label spans 3 rows -->
+            <td>Mobile Phone:</td>
+            <td align="center">+60195498053</td>
+        </tr>
+        <tr>
+            <td>Social Media:</td>
+            <td align="center">@frhsbrn_</td>
+        </tr>
+        <tr>
+            <td>Website:</td>
+            <td align="center"><a href="https://www.instagram.com/frhsbrn_/">frhsbrn_</a></td>
+        </tr>
+        <!-- Course and Institution -->
         <tr>
             <th>Course and Institution</th>
-            <td colspan="2">BSc in Computer Science Software Engineering with Honours, Tun Hussien Onn University Of Malaysia</td>
+            <td colspan="3">Bachelor Degree in Computer Science Software Engineering with Honours, Tun Hussien Onn University Of Malaysia</td>
         </tr>
+        <!-- Programming Skills -->
         <tr>
             <th>Programming Skills</th>
-            <td colspan="2">
+            <td colspan="3">
                 <ul>
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
@@ -77,9 +115,10 @@
                 </ul>
             </td>
         </tr>
+        <!-- Personal Interests -->
         <tr>
             <th>Personal Interest</th>
-            <td colspan="2">
+            <td colspan="3">
                 <ul>
                     <li>Music</li>
                     <li>Travelling</li>
@@ -87,9 +126,10 @@
                 </ul>
             </td>
         </tr>
+        <!-- Future Plan -->
         <tr>
             <th>Future Plan in 2025</th>
-            <td colspan="2">To work as a software developer and contribute to open-source projects.</td>
+            <td colspan="3">To work as a software developer and contribute to open-source projects.</td>
         </tr>
     </table>
 </body>
